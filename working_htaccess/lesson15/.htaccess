@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteBase /
 
-RewriteRule test\d+.php index.php
+RewriteRule test\d+\.php index.php
