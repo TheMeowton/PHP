@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} \.html$
+RewriteCond %{REQUEST_URI} ^/content/
+
+#Варинт, где content может быть корневой и вложенной папкой
+#RewriteCond %{REQUEST_URI} (^content\/|\/content\/)
+
+RewriteRule .+ index.php
